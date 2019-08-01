@@ -18,8 +18,7 @@ const styles = StyleSheet.create({
         borderBottomColor: "#bbb",
         marginLeft: 8,
         marginRight: 8,
-        marginBottom: 10,
-        marginTop: 10,
+        marginBottom: 20,
     }
 })
 
