@@ -1,3 +1,3 @@
-import ShowDetails from './ShowDetails'
+import ShowDetails from './ShowDetails';
 
 export default ShowDetails;

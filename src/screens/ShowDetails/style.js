@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
       justifyContent: "space-between"
     },
     imageStyle: {
-      height: 350,
+      height: 300,
       resizeMode: "stretch"
     },
     ratingContainerStyle: {
@@ -16,8 +16,8 @@ const styles = StyleSheet.create({
     infoContainerStyle: {
       marginBottom: 15
     },  
-    contentStyle: {
-      fontSize: 14,
+    infoTitleStyle: {
+      fontSize: 15,
       fontWeight: "bold",
     }
   })

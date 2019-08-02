@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
-import {
-    View,
-    FlatList
-} from 'react-native';
+import { View, FlatList } from 'react-native';
 import axios from 'axios';
 import styles from './style';
 import Show from '../../Components/Show';
 import PlaceInput from '../../Components/PlaceInput';
-
 
 class Home extends Component {
     state = {
@@ -53,8 +49,7 @@ class Home extends Component {
                         />
                     )}
                 />
-            </View>
-            
+            </View>   
         )
     }
 }

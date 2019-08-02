@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import AppContainer from './src/Routes'
+import React, { Component } from 'react';
+import AppContainer from './src/Routes';
 
 class App extends Component{
   render() {
