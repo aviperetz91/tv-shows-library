@@ -9,18 +9,7 @@ const RootStack = createStackNavigator(
     },
     {
         initialRouteName: "Home",
-        defaultNavigationOptions: {
-            headerStyle: {
-                borderColor: "#aaa",
-                backgroundColor: "#212529",
-                height: 60, 
-            },
-            headerTitleContainerStyle: {
-                alignItems: "center",
-                justifyContent: "center"
-            },
-            headerTintColor: "#fff"
-        }
+        headerMode: "none"
     },
 );
 

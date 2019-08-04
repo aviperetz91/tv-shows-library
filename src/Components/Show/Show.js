@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text, View, Image, TouchableOpacity } from 'react-native';
+import { View, Image } from 'react-native';
+import { Button, Text } from 'native-base';
 import Card from '../Card';
 import CardSection from '../CardSection';
 import styles from './style';
@@ -15,14 +16,16 @@ const Show = (props) => {
             </CardSection>
 
             <CardSection>
-                <TouchableOpacity onPress={() => props.navigation.navigate("ShowDetails", {
-                    show: props.show,
-                    title: props.show.name
-                })}>
-                    <View style={styles.titleContainerStyle}>
-                        <Text style={styles.titleTextStyle}>{props.show.name}</Text>
-                    </View>
-                </TouchableOpacity>
+                <Button 
+                    block 
+                    style={styles.buttonStyle}
+                    onPress={() => props.navigation.navigate("ShowDetails", {
+                        show: props.show,
+                        title: props.show.name
+                    })}
+                >
+                    <Text style={styles.titleTextStyle}>{props.show.name}</Text>
+                </Button>
             </CardSection>
 
             <CardSection>

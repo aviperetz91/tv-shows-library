@@ -3,7 +3,7 @@ import { View, TextInput } from 'react-native';
 import Button from '../Button';
 import styles from './style';
 
-class PlaceInput extends Component{
+class SearchBar extends Component{
     state = {
         userInput: "",
     }
@@ -14,11 +14,11 @@ class PlaceInput extends Component{
                 <TextInput
                     style={styles.placeInput}
                     value={this.state.userInput}
-                    placeholder={"Enter a name of TV-Show"}
+                    placeholder={this.props.placeholder}
                     onChangeText={(input) => this.setState({userInput: input})}
                 ></TextInput>
                 <Button
-                    txt={"Search"}
+                    txt={this.props.txt}
                     style={styles.placeButton}
                     press={() => this.props.filterSearch(this.state.userInput)}
                 ></Button>
@@ -27,4 +27,4 @@ class PlaceInput extends Component{
     }
 }
 
-export default PlaceInput;
+export default SearchBar;
