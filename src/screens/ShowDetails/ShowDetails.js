@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { View, Text, Image, ScrollView, StatusBar } from 'react-native';
-import { Container, Header, Left, Body, Button, Icon, Title } from 'native-base';
+import { Container, Header, Left, Body, Button, Icon, Title, Footer } from 'native-base';
 import styles from './style';
 import InfoSection from '../../Components/InfoSection';
 
@@ -68,6 +68,12 @@ class ShowDetails extends Component {
 
         </ScrollView>
            
+        <Footer style={styles.footerStyle}>
+            <Body style={styles.footerTitleContainer}>
+                <Title>Avi Peretz</Title>
+            </Body>
+        </Footer>
+
       </Container>
     );
   }

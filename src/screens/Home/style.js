@@ -10,6 +10,13 @@ const styles = StyleSheet.create({
     },
     titleContainerStyle: {
         marginLeft: 25
+    },
+    footerStyle: {
+        backgroundColor: "#212529",
+        height: 40
+    },
+    footerTitleContainer: {
+        justifyContent: "center"
     }
 })
   

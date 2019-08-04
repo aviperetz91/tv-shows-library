@@ -22,6 +22,13 @@ const styles = StyleSheet.create({
     infoTitleStyle: {
       fontSize: 15,
       fontWeight: "bold",
+    },
+    footerStyle: {
+      backgroundColor: "#212529",
+      height: 40
+    },
+    footerTitleContainer: {
+        justifyContent: "center"
     }
   })
   

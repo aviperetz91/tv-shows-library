@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { FlatList, StatusBar } from 'react-native';
-import { Container, Header, Body, Right, Button, Icon, Title } from 'native-base';
+import { Container, Header, Body, Right, Button, Icon, Title, Footer } from 'native-base';
 import axios from 'axios';
 import styles from './style';
 import Show from '../../Components/Show';
@@ -75,6 +75,12 @@ class Home extends Component {
                             navigation={this.props.navigation}
                         />
                     )}/>
+                
+                <Footer style={styles.footerStyle}>
+                    <Body style={styles.footerTitleContainer}>
+                        <Title>Avi Peretz</Title>
+                    </Body>
+                </Footer>
 
             </Container>  
         )
